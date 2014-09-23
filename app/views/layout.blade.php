@@ -1,6 +1,6 @@
 <html>
     <body>
-        <h1>Laravel Quickstart</h1>
+        <h1>LemonStand Store</h1>
 
         @yield('content')
     </body>

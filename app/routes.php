@@ -24,3 +24,8 @@ Route::get('users', function()
    // $data->'const' = LEMONSTANDNAME;
     return View::make('users')->with('data', $data)->with('name', $name);
 });
+
+Route::get('products', 'LemonController@showProducts');
+
+Route::get('test','HomeController@showWelcome');
+
