@@ -25,7 +25,13 @@ Route::get('users', function()
     return View::make('users')->with('data', $data)->with('name', $name);
 });
 
+
 Route::get('products', 'LemonController@showProducts');
 
-Route::get('test','HomeController@showWelcome');
+
+
+
+Route::get('prices','LemonController@showprices');
+
+
 
