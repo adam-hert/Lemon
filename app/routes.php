@@ -11,27 +11,16 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
-
-Route::get('users', function()
-{
-	$data= User::all();
-	$name = "bob".LEMONSTANDNAME;
-    
-   // $data->'const' = LEMONSTANDNAME;
-    return View::make('users')->with('data', $data)->with('name', $name);
-});
 
 
-Route::get('products', 'LemonController@showProducts');
+//To update products in local DB, return import stats.
+Route::get('updateproducts', 'LemonController@updateProducts');
 
+//show products from local DB
+Route::get('products','LemonController@listproducts');
 
-
-
-Route::get('prices','LemonController@showprices');
+//show bar graph of price from local DB
+Route::get('graph','LemonController@barGraph');
 
 
 
