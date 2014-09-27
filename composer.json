@@ -19,7 +19,7 @@
 		"psr-0": {
             "services": "app/services"
         },
-         "psr-1": {
+         "psr-0": {
             "LemonStand": "app/storage/lemonSDK/php-sdk/src"
         }
 	},
@@ -39,12 +39,10 @@
 	"config": {
 		"preferred-install": "dist"
 	},
-	"minimum-stability": "stable",
+	"minimum-stability": "stable"
 
 
-  "require":{
-    "lemonstand/php-sdk": "dev-master"
-  }
+  
 
 
 

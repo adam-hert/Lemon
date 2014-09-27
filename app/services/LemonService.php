@@ -14,7 +14,7 @@
           'token' => LEMONSTANDTOKEN
         );
 
-     	$lemonclient= new \lemonstand\sdk\Client($lemonconfig);
+     	$lemonclient= new \LemonStand\sdk\Client($lemonconfig);
 
      	$products = $lemonclient->get('/products');
 

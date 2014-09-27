@@ -14,6 +14,8 @@
 $app = new Illuminate\Foundation\Application;
 require $paths['app'].'/config/constants.php';
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Detect The Application Environment

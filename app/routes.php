@@ -22,5 +22,12 @@ Route::get('products','LemonController@listproducts');
 //show bar graph of price from local DB
 Route::get('graph','LemonController@barGraph');
 
+Route::get('', function(){
+
+	return View::make('home');
+
+
+});
+
 
 

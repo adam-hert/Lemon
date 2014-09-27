@@ -1,13 +1,16 @@
 @extends('layout')
 
+@section('header')
+
+	<h1>Products</h1>
 	
 @section('content')
 
-	<h1>Products</h1>
+	
 
     @foreach($data as $product)
 
-        <div style='border:solid 1px #aaa;width:50%;margin-bottom:10px'> <b>{{ $product->name }}</b> {{$product -> base_price}}</div>
+        <div style='border:solid 1px #aaa;width:100%;margin-bottom:0px;height:30px;line-height:30px;text-indent:10px'> <b>{{ $product->name }}</b> {{$product -> base_price}}</div>
 
     @endforeach
 
